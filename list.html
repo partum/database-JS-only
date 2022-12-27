@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        All Books in the System
+    </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+	<h1>All Books in Circulation</h1>
+	<hr>
+			<div class="book-form">
+                <form onsubmit="event.preventDefault();onFormSubmit();" autocomplete="off">
+                    <div>
+                        <label>Title</label><label class="validation-error hide" id="titleValidationError">This field is required.</label>
+                        <input type="text" name="title" id="title">
+                    </div>
+                    <div>
+                        <label>Author</label>
+                        <input type="text" name="author" id="author">
+                    </div>
+                    <div>
+                        <label>Call #</label>
+                        <input type="text" name="callNo" id="callNo">
+                    </div>
+                    <div>
+                        <label>Year Published</label>
+                        <input type="text" name="year" id="year">
+                    </div>
+                    <div  class="form-action-buttons">
+                        <input type="submit" value="Submit">
+                    </div>
+                </form>
+		</div>
+		<br/>
+		<div class = "book-table">
+                <table class="list" id="employeeList">
+                    <thead>
+                        <tr>
+                            <th>Title</th>
+                            <th>Author</th>
+                            <th>Call #</th>
+                            <th>Year Published</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                    </tbody>
+                </table>
+        </div>
+    <script src="script.js"></script>
+</body>
+</html>
